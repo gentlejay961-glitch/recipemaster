@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,53 +8,150 @@
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <h1>My Recipes</h1>
+<!-- NAV -->
+<nav>
+    <h1>My Recipes</h1>
+    <ul>
+        <li><a href="#top">Home</a></li>
+        <li><a href="#recipes">Recipes</a></li>
+        <li><a href="#categories">Categories</a></li>
+    </ul>
+</nav>
+
+<!-- HEADER -->
+<header>
+    <h2>Welcome to My Recipe Website</h2>
+    <p>Simple and tasty recipes you can try at home</p>
+    <a href="#recipes" class="btn">View Recipes</a>
+</header>
+
+<!-- FEATURED -->
+<section class="featured">
+    <h2>Featured Recipe</h2>
+    <img src="pancakes.png">
+    <p>Soft and fluffy pancakes perfect for breakfast.</p>
+    <a href="#pancakes" class="btn">See Recipe</a>
+</section>
+
+<!-- CATEGORIES -->
+<section id="categories" class="categories">
+    <h2>Categories</h2>
+    <a href="#pancakes" class="btn">Breakfast</a>
+    <a href="#spaghetti" class="btn">Lunch</a>
+    <a href="#friedrice" class="btn">Dinner</a>
+</section>
+
+<!-- CARDS -->
+<section class="recipes" id="recipes">
+
+    <a href="#pancakes" class="card">
+        <img src="pancakes.png">
+        <h3>Pancakes</h3>
+    </a>
+
+    <a href="#spaghetti" class="card">
+        <img src="spaghetti.png">
+        <h3>Spaghetti</h3>
+    </a>
+
+    <a href="#friedrice" class="card">
+        <img src="friedrice.png">
+        <h3>Fried Rice</h3>
+    </a>
+
+</section>
+
+<!-- DETAILS -->
+<section class="details">
+
+    <!-- Pancakes -->
+    <div id="pancakes" class="recipe-card">
+        <h2>Pancakes</h2>
+        <img src="pancakes.png">
+        <p>Soft and fluffy pancakes perfect for breakfast.</p>
+
+        <p><strong>Time:</strong> 20 mins | <strong>Level:</strong> Easy</p>
+
+        <a href="#cook-pancakes" class="btn">Start Cooking</a>
+
+        <div id="cook-pancakes" class="cook">
+            <p>Step 1: Mix ingredients</p>
+            <p>Step 2: Heat pan</p>
+            <p>Step 3: Cook pancakes</p>
+        </div>
+
+        <p><strong>Ingredients:</strong></p>
         <ul>
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">Recipes</a></li>
-            <li><a href="#">About</a></li>
+            <li>Flour</li>
+            <li>Milk</li>
+            <li>Eggs</li>
         </ul>
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <h2>Welcome to My Recipe Website</h2>
-        <p>Simple and tasty recipes you can try at home</p>
-        <a href="#" class="btn">View Recipes</a>
-    </header>
+        <p><strong>Tip:</strong> Cook on low heat</p>
+    </div>
 
-    <!-- Recipe Cards -->
-    <section class="recipes">
+    <!-- Spaghetti -->
+    <div id="spaghetti" class="recipe-card">
+        <h2>Spaghetti</h2>
+        <img src="spaghetti.png">
+        <p>Classic spaghetti with rich tomato sauce.</p>
 
-        <a href="pancakes.html">
-            <div class="card">
-                <img src="pancakes.png" alt="Pancakes">
-                <h3>Pancakes</h3>
-            </div>
-        </a>
+        <p><strong>Time:</strong> 30 mins | <strong>Level:</strong> Medium</p>
 
-        <a href="spaghetti.html">
-            <div class="card">
-                <img src="spaghetti.png" alt="Spaghetti">
-                <h3>Spaghetti</h3>
-            </div>
-        </a>
+        <a href="#cook-spaghetti" class="btn">Start Cooking</a>
 
-        <a href="friedrice.html">
-            <div class="card">
-                <img src="friedrice.png" alt="Fried Rice">
-                <h3>Fried Rice</h3>
-            </div>
-        </a>
+        <div id="cook-spaghetti" class="cook">
+            <p>Step 1: Boil pasta</p>
+            <p>Step 2: Cook sauce</p>
+            <p>Step 3: Mix and serve</p>
+        </div>
 
-    </section>
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+            <li>Pasta</li>
+            <li>Tomato sauce</li>
+            <li>Garlic</li>
+        </ul>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2026 My Recipes</p>
-    </footer>
+        <p><strong>Tip:</strong> Add herbs for better flavor</p>
+    </div>
+
+    <!-- Fried Rice -->
+    <div id="friedrice" class="recipe-card">
+        <h2>Fried Rice</h2>
+        <img src="friedrice.png">
+        <p>Quick and tasty fried rice with vegetables.</p>
+
+        <p><strong>Time:</strong> 25 mins | <strong>Level:</strong> Easy</p>
+
+        <a href="#cook-friedrice" class="btn">Start Cooking</a>
+
+        <div id="cook-friedrice" class="cook">
+            <p>Step 1: Cook rice</p>
+            <p>Step 2: Fry vegetables</p>
+            <p>Step 3: Mix everything</p>
+        </div>
+
+        <p><strong>Ingredients:</strong></p>
+        <ul>
+            <li>Rice</li>
+            <li>Vegetables</li>
+            <li>Egg</li>
+        </ul>
+
+        <p><strong>Tip:</strong> Use cold rice for best results</p>
+    </div>
+
+</section>
+
+<!-- TOP -->
+<div class="top-btn">
+    <a href="#top">Back to Top</a>
+</div>
+
+<footer>
+    <p>© 2026 My Recipes</p>
+</footer>
 
 </body>
 </html>
