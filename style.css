@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff7f50;
+    padding: 15px 30px;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Recipe section */
+.recipes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+    width: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    background: white;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card h3 {
+    padding: 15px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
